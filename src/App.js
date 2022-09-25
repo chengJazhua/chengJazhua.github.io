@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-
+import logo from './background.png';
 import ScrollTop from './ScrollTop';
 import { BiDownArrow } from 'react-icons/bi';
 import About from "./about"
@@ -29,10 +29,19 @@ function App() {
 		<div className="App">
 			
 			<ScrollTop />
-			<div className="section section1">
+			<div className="section section1"
+				style={{
+					backgroundImage: `url(${logo})`,
+					backgroundPosition: "center",
+ 				 	backgroundSize: "cover",}}>
+				
 				<div className="link btn" onClick={() => scrollDown(homeSection)}>
-					<BiDownArrow />
+					<BiDownArrow size = "50" />
 				</div>
+				
+			</div>
+			<div className="section section2" ref={homeSection}>
+				<h2>Home</h2>
 				<ul className="nav-links">
 					<li className="link" onClick={() => scrollDown(aboutSection)}>
 						About Me
@@ -44,9 +53,6 @@ function App() {
 						Contact
 					</li>
 				</ul>
-			</div>
-			<div className="section section2" ref={homeSection}>
-				<h2>Home</h2>
         
 			</div>
 			<div className="section section3" ref={aboutSection}>
