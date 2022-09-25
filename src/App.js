@@ -55,6 +55,9 @@ function App() {
 					backgroundImage: `url(${logo})`,
 					backgroundPosition: "center",
  				 	backgroundSize: "cover",}}>
+						<div style = {{size: 510}}>
+						<h1> Hi! :) </h1>
+						</div>
 				
 				<div className="link2 btn" onClick={() => scrollDown(homeSection)}>
 					<BiDownArrow size = "50" />
@@ -82,7 +85,9 @@ function App() {
 			
 			<div className="section section3" ref={aboutSection}>
 			<FadeInSection>
-				<h2>About Me</h2>
+			<div style = {{ color: "black", fontStyle: 'italic'}}>
+				<h2>ABOUT ME</h2>
+				</div>
         <About>
 
         </About>
@@ -91,7 +96,9 @@ function App() {
 			
 			<div className="section section4" ref={projectSection}>
 				<FadeInSection>
-				<h2>Projects</h2>
+				<div style = {{ color: "black", fontStyle: 'italic'}}>
+				<h2>PROJECTS</h2>
+				</div>
         <Project>
 
         </Project>
