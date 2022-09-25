@@ -5,10 +5,31 @@ import { BiDownArrow } from 'react-icons/bi';
 import About from "./about"
 import Contact from "./contact"
 import Project from "./project"
+import React from "react"
+function FadeInSection(props) {
+	const [isVisible, setVisible] = React.useState(true);
+	const domRef = React.useRef();
+	React.useEffect(() => {
+	  const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => setVisible(entry.isIntersecting));
+	  });
+	  observer.observe(domRef.current);
+	  return () => observer.unobserve(domRef.current);
+	}, []);
+	return (
+	  <div
+		className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+		ref={domRef}
+	  >
+		{props.children}
+	  </div>
+	);
+  }
+
 function App() {
 	const homeSection = useRef(null)
 	const aboutSection = useRef(null);
-	const servcesSection = useRef(null);
+	const projectSection = useRef(null);
 	const contactSection = useRef(null);
 
 	const scrollDown = (ref) => {
@@ -35,47 +56,62 @@ function App() {
 					backgroundPosition: "center",
  				 	backgroundSize: "cover",}}>
 				
-				<div className="link btn" onClick={() => scrollDown(homeSection)}>
+				<div className="link2 btn" onClick={() => scrollDown(homeSection)}>
 					<BiDownArrow size = "50" />
 				</div>
 				
 			</div>
-			<div className="section section2" ref={homeSection}>
-				<h2>Home</h2>
-				<ul className="nav-links">
-					<li className="link" onClick={() => scrollDown(aboutSection)}>
-						About Me
+			<div className="bar section2" ref={homeSection} style = {{display: 'flex', alignText: "center", justifyContent: 'space-around',
+  alignItems: 'center'}}>
+				<FadeInSection>
+				<ul className="nav-links" >
+					
+					<li className="link" onClick={() => scrollDown(aboutSection)} style = {{color: "white", fontStyle: 'italic'}}>
+						ABOUT ME
 					</li>
-					<li className="link" onClick={() => scrollDown(servcesSection)}>
-						Services
+					
+					<li className="link" onClick={() => scrollDown(projectSection)} style = {{color: "white", fontStyle: 'italic'}}>
+						PROJECTS
 					</li>
-					<li className="link" onClick={() => scrollDown(contactSection)}>
-						Contact
+					<li className="link" onClick={() => scrollDown(contactSection)} style = {{color: "white", fontStyle: 'italic'}}>
+						CONTACT
 					</li>
 				</ul>
-        
+				</FadeInSection>
 			</div>
+			
 			<div className="section section3" ref={aboutSection}>
+			<FadeInSection>
 				<h2>About Me</h2>
         <About>
 
         </About>
+		</FadeInSection>
 			</div>
-			<div className="section section4" ref={servcesSection}>
+			
+			<div className="section section4" ref={projectSection}>
+				<FadeInSection>
 				<h2>Projects</h2>
         <Project>
 
         </Project>
+		</FadeInSection>
 			</div>
-			<div className="section section5" ref={contactSection}>
-				<h2>Contact</h2>
+			
+			<div className="footer section5" ref={contactSection}>
+			<FadeInSection>
+				<div style = {{ color: "#EFF0F1", fontStyle: 'italic'}}>
+				<h2>CONTACT ME</h2>
+				</div>
         <Contact>
 
         </Contact>
+		</FadeInSection>
 			</div>
 			
 		</div>
 	);
 }
+
 
 export default App;

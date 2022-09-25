@@ -43,14 +43,17 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
+    
     'aria-controls': `simple-tabpanel-${index}`,
+    color: "#222231"
   };
 }
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
+    flexGrow: 5,
+    backgroundColor: "red",
+    
   },
 }));
 
@@ -66,37 +69,59 @@ export default function TabPan() {
     <div className={classes.root}>
      
       <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-          <Tab label="Item Four" {...a11yProps(3)} />
-          <Tab label="Item Five" {...a11yProps(4)} />
-          <Tab label="Item Six" {...a11yProps(5)} />
-          <Tab label="More to come..." {...a11yProps(6)} />
+        <Tabs value={value} onChange={handleChange} aria-label="tabs" style = {{backgroundColor: "#EFF0F1"}}>
+          
+          <Tab label="Item One" {...a11yProps(0)} style = {{color: "#222231"}}/>
+          <Tab label="Item Two" {...a11yProps(1)} style = {{color: "#222231"}}/>
+          <Tab label="Item Three" {...a11yProps(2)} style = {{color: "#222231"}}/>
+          <Tab label="Item Four" {...a11yProps(3)} style = {{color: "#222231"}}/>
+          <Tab label="Item Five" {...a11yProps(4)} style = {{color: "#222231"}}/>
+          <Tab label="Item Six" {...a11yProps(5)} style = {{color: "#222231"}}/>
+          <Tab label="More to come..." {...a11yProps(6)} style = {{color: "#222231"}}/>
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0}>
-        Item One
+      <div style={{
+        backgroundColor: "#B4ACB7"
+      }}>
+      <TabPanel value={value} index={0} >
+        <div style = {{color: "#222231"}}>
+          Item One
+        </div>
+        
+
+        
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+      <div style = {{color: "#222231"}}>
+          Item One
+        </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      <div style = {{color: "#222231"}}>
+          Item One
+        </div>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+      <div style = {{color: "#222231"}}>
+          Item One
+        </div>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Five
+      <div style = {{color: "#222231"}}>
+          Item One
+        </div>
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Item Six
+      <div style = {{color: "#222231"}}>
+          Item One
+        </div>
       </TabPanel>
       <TabPanel value={value} index={6}>
-        More
+      <div style = {{color: "#222231"}}>
+          Item One
+        </div>
       </TabPanel>
+    </div>
     </div>
     
   );
