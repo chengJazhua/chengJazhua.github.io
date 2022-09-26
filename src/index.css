@@ -22,6 +22,14 @@ body {
 
 .text{
   margin-left: 70px;
+
+}
+
+.skills{
+  margin-left: 70px;
+  display: flex;
+  align-items: flex-end;
+  height: 55vh;
 }
 
 .bar{
@@ -48,6 +56,10 @@ img {
   float: right;
   width: 40%;
 
+}
+.selfie {
+  float: right;
+  width: 70%;
 }
 video{
   float: right;

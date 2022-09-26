@@ -10,6 +10,7 @@ import Box from '@material-ui/core/Box';
 import ball from "./ballPic.png";
 import child from "./369Pic.png";
 import csv from "./CSV.mov";
+import pas from "./pastimer.PNG";
   /*
 const Project = () => {
   return (
@@ -88,51 +89,76 @@ export default function TabPan() {
       }}>
       <TabPanel value={value} index={0} >
       <div>
-        <video src={csv} width="300" height="500" controls="controls" autoplay="true" />
+        <video src={csv} width="300" height="500" controls="controls" autoplay="true" muted = "true"/>
         </div>
-        <div style = {{color: "#222231"}}>
+        <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
           CSV
         </div>
         
-
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+          
+          Java&emsp; •&emsp; KML&emsp; •&emsp; Algorithms&emsp; •&emsp; Javascript&emsp; •&emsp; OOP
+        </div>
         
       </TabPanel>
       <TabPanel value={value} index={1}>
       <div>
         <img src={ball} alt="ball ss" />
         </div>
-      <div style = {{color: "#222231", width: "60vw"}}>
-          Ball
+        
+      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
+          Balls
           
         </div>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+          
+          Java&emsp; •&emsp; Java GUI&emsp; •&emsp; Git&emsp; •&emsp; Physics&emsp; •&emsp; OOP
+        </div>
+        
         
       </TabPanel>
       <TabPanel value={value} index={2}>
-      <div style = {{color: "#222231"}}>
+      <div>
+        <img src={pas} alt="pastimer" />
+        </div>
+      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
           Pastimer
           
+        </div>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+          
+          Java&emsp; •&emsp; LibGDX&emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; OOP
         </div>
       </TabPanel>
       <TabPanel value={value} index={3}>
       <div>
         <img src={child} alt="369 ss" />
         </div>
-      <div style = {{color: "#222231"}}>
+      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
           369
+        </div>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+          
+          Java
         </div>
       </TabPanel>
       <TabPanel value={value} index={4}>
-      <div style = {{color: "#222231"}}>
+      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
           Website
+        </div> 
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+          
+          Javascript&emsp; •&emsp; HTML&emsp; •&emsp; CSS &emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; React
         </div>
       </TabPanel>
       <TabPanel value={value} index={5}>
-      <div style = {{color: "#222231"}}>
+      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
           In Progress!
         </div>
+        
       </TabPanel>
       <TabPanel value={value} index={6}>
-      <div style = {{color: "#222231"}}>
+      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
           Much more to come!
         </div>
       </TabPanel>
