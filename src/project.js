@@ -155,7 +155,10 @@ export default function TabPan() {
       <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
           In Progress!
         </div>
-        
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+          
+          Javascript&emsp; •&emsp; Python&emsp; •&emsp; CSS &emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; React
+        </div>
       </TabPanel>
       <TabPanel value={value} index={6}>
       <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>

@@ -78,7 +78,7 @@ function App() {
 						PROJECTS
 					</li>
 					<li className="link" onClick={() => scrollDown(contactSection)} style = {{color: "white", fontStyle: 'italic'}}>
-						CONTACT
+						CONTACT ME
 					</li>
 				</ul>
 				</FadeInSection>

@@ -49,12 +49,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 40vh;
+  height: 70vh;
   width: 40%;
 }
 img {
   float: right;
   width: 40%;
+  
 
 }
 .selfie {
