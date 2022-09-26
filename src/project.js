@@ -7,6 +7,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box'; 
+import ball from "./ballPic.png";
+import child from "./369Pic.png";
+import csv from "./CSV.mov";
   /*
 const Project = () => {
   return (
@@ -71,12 +74,12 @@ export default function TabPan() {
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange} aria-label="tabs" style = {{backgroundColor: "#EFF0F1"}}>
           
-          <Tab label="Item One" {...a11yProps(0)} style = {{color: "#222231"}}/>
-          <Tab label="Item Two" {...a11yProps(1)} style = {{color: "#222231"}}/>
-          <Tab label="Item Three" {...a11yProps(2)} style = {{color: "#222231"}}/>
-          <Tab label="Item Four" {...a11yProps(3)} style = {{color: "#222231"}}/>
-          <Tab label="Item Five" {...a11yProps(4)} style = {{color: "#222231"}}/>
-          <Tab label="Item Six" {...a11yProps(5)} style = {{color: "#222231"}}/>
+        <Tab label="CSV Converter" {...a11yProps(0)} style = {{color: "#222231"}}/>
+          <Tab label="Bing Bong" {...a11yProps(1)} style = {{color: "#222231"}}/>
+          <Tab label="Pastimer" {...a11yProps(2)} style = {{color: "#222231"}}/>
+          <Tab label="369 Game" {...a11yProps(3)} style = {{color: "#222231"}}/>
+          <Tab label="Personal Site" {...a11yProps(4)} style = {{color: "#222231"}}/>
+          <Tab label="Server and Frontend" {...a11yProps(5)} style = {{color: "#222231"}}/>
           <Tab label="More to come..." {...a11yProps(6)} style = {{color: "#222231"}}/>
         </Tabs>
       </AppBar>
@@ -84,41 +87,53 @@ export default function TabPan() {
         backgroundColor: "#B4ACB7"
       }}>
       <TabPanel value={value} index={0} >
+      <div>
+        <video src={csv} width="300" height="500" controls="controls" autoplay="true" />
+        </div>
         <div style = {{color: "#222231"}}>
-          Item One
+          CSV
         </div>
         
 
         
       </TabPanel>
       <TabPanel value={value} index={1}>
-      <div style = {{color: "#222231"}}>
-          Item One
+      <div>
+        <img src={ball} alt="ball ss" />
         </div>
+      <div style = {{color: "#222231", width: "60vw"}}>
+          Ball
+          
+        </div>
+        
       </TabPanel>
       <TabPanel value={value} index={2}>
       <div style = {{color: "#222231"}}>
-          Item One
+          Pastimer
+          
         </div>
       </TabPanel>
       <TabPanel value={value} index={3}>
+      <div>
+        <img src={child} alt="369 ss" />
+        </div>
       <div style = {{color: "#222231"}}>
-          Item One
+          369
         </div>
       </TabPanel>
       <TabPanel value={value} index={4}>
       <div style = {{color: "#222231"}}>
-          Item One
+          Website
         </div>
       </TabPanel>
       <TabPanel value={value} index={5}>
       <div style = {{color: "#222231"}}>
-          Item One
+          In Progress!
         </div>
       </TabPanel>
       <TabPanel value={value} index={6}>
       <div style = {{color: "#222231"}}>
-          Item One
+          Much more to come!
         </div>
       </TabPanel>
     </div>

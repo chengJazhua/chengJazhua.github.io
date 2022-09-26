@@ -6,6 +6,7 @@ import About from "./about"
 import Contact from "./contact"
 import Project from "./project"
 import React from "react"
+
 function FadeInSection(props) {
 	const [isVisible, setVisible] = React.useState(true);
 	const domRef = React.useRef();
@@ -83,10 +84,10 @@ function App() {
 				</FadeInSection>
 			</div>
 			
-			<div className="section section3" ref={aboutSection}>
+			<div className="section section3" ref={aboutSection} >
 			<FadeInSection>
-			<div style = {{ color: "black", fontStyle: 'italic'}}>
-				<h2>ABOUT ME</h2>
+			<div style = {{ color: "black", fontStyle: 'italic', }}>
+				<h2 >ABOUT ME</h2>
 				</div>
         <About>
 
