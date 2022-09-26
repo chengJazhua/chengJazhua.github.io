@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/chengJazhua.github.io/static/css/main.0fccd045.css",
-    "main.js": "/chengJazhua.github.io/static/js/main.233879c3.js",
-    "static/js/787.939ee3b7.chunk.js": "/chengJazhua.github.io/static/js/787.939ee3b7.chunk.js",
-    "static/media/background.png": "/chengJazhua.github.io/static/media/background.9cb0c7825f1905eedfaa.png",
-    "static/media/CSV.mov": "/chengJazhua.github.io/static/media/CSV.6626544e2cdb539b9b93.mov",
-    "static/media/369Pic.png": "/chengJazhua.github.io/static/media/369Pic.529ce376bdac53316a92.png",
-    "static/media/ballPic.png": "/chengJazhua.github.io/static/media/ballPic.5c71c35ea029d1be5f44.png",
-    "index.html": "/chengJazhua.github.io/index.html",
-    "main.0fccd045.css.map": "/chengJazhua.github.io/static/css/main.0fccd045.css.map",
-    "main.233879c3.js.map": "/chengJazhua.github.io/static/js/main.233879c3.js.map",
-    "787.939ee3b7.chunk.js.map": "/chengJazhua.github.io/static/js/787.939ee3b7.chunk.js.map"
+    "main.css": "/static/css/main.0fccd045.css",
+    "main.js": "/static/js/main.b5b275b5.js",
+    "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
+    "static/media/background.png": "/static/media/background.9cb0c7825f1905eedfaa.png",
+    "static/media/CSV.mov": "/static/media/CSV.6626544e2cdb539b9b93.mov",
+    "static/media/369Pic.png": "/static/media/369Pic.529ce376bdac53316a92.png",
+    "static/media/ballPic.png": "/static/media/ballPic.5c71c35ea029d1be5f44.png",
+    "index.html": "/index.html",
+    "main.0fccd045.css.map": "/static/css/main.0fccd045.css.map",
+    "main.b5b275b5.js.map": "/static/js/main.b5b275b5.js.map",
+    "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fccd045.css",
-    "static/js/main.233879c3.js"
+    "static/js/main.b5b275b5.js"
   ]
 }
