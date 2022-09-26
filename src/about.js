@@ -10,7 +10,7 @@ const About = () => {
       }}>
       <h1 className = "text">
         Welcome to my website! My name is Ja-Zhua Cheng, a freshman currently studying Computer Science at University of Virginia. 
-        I am an aspiring software engineer, but am exploring many other fields. I not only love to code, but also enjoy 
+        I am an aspiring software engineer, but am very open to exploring other related fields. I not only love to code, but also enjoy 
         playing the piano and weightlifting. I have CS experience from an internship at Leidos, personal projects, and many classes.
       </h1>
     </div>
