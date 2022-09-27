@@ -11,6 +11,7 @@ import ball from "./ballPic.png";
 import child from "./369Pic.png";
 import csv from "./CSV.mov";
 import pas from "./pastimer.PNG";
+import web from "./unknown.png";
   /*
 const Project = () => {
   return (
@@ -85,17 +86,26 @@ export default function TabPan() {
         </Tabs>
       </AppBar>
       <div style={{
-        backgroundColor: "#B4ACB7"
+        backgroundColor: "#E9DFDA"
       }}>
       <TabPanel value={value} index={0} >
       <div>
         <video src={csv} width="300" height="500" controls="controls" autoplay="true" muted = "true"/>
         </div>
         <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
-          CSV
+          A CSV to KML converter created during my internship at Leidos specifically for their uses
+          before adapting it for more general use. It contains convex-hull algorithms to correctly
+          display coordinates in a nice polygon shape. When given any CSV file or a folder of CSV files, 
+          the program asks for value ranges for each layer before quickly converting them all into KML files
+          that can be opened as a visual simulation in Google Earth. This can be useful for representing data in the real 
+          world for clients or to allow for better understanding of situations. Learn more&nbsp;
+        <a href = "https://github.com/chengJazhua/CsvToKml">
+        here.
+          
+        </a>
         </div>
         
-        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: "26.95vh"}}>
           
           Java&emsp; •&emsp; KML&emsp; •&emsp; Algorithms&emsp; •&emsp; Javascript&emsp; •&emsp; OOP
         </div>
@@ -107,10 +117,18 @@ export default function TabPan() {
         </div>
         
       <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
-          Balls
+          This is a little game ball game I created that was named Bing Bong. It was made using 
+          Java and Java GUI, and the core of the game is to just destroy all the blocks in the level
+          by hitting them with the ball. Although fairly simple gameplay wise, the program contains a collision 
+          detector, real world physics, a local leaderboard, scaling randomized levels, power-ups and debuffs.
+          It also utilizes Java as an object oriented language. Learn more&nbsp;
+          <a href = "https://github.com/chengJazhua/ballGame">
+        here.
+          
+        </a>
           
         </div>
-        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height:'35vh'}}>
           
           Java&emsp; •&emsp; Java GUI&emsp; •&emsp; Git&emsp; •&emsp; Physics&emsp; •&emsp; OOP
         </div>
@@ -122,10 +140,18 @@ export default function TabPan() {
         <img src={pas} alt="pastimer" />
         </div>
       <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
-          Pastimer
+          This is a desktop application called Pastimer. This was created based off the pomodoro studying technique,
+          where one studies then takes a break in semi-short time spans. Pastimer is a timer where it allows users
+          to select how long they want to study and take a break for, then continously repeats those
+          timers. Not only that, but the program contains self-coded mini-games for users during the break as well,
+          including minesweeper, frogger, and more. Learn more&nbsp;
+          <a href = "https://github.com/thomasltran/pastimer">
+        here.
+        
+        </a>
           
         </div>
-        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: "35vh"}}>
           
           Java&emsp; •&emsp; LibGDX&emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; OOP
         </div>
@@ -135,27 +161,45 @@ export default function TabPan() {
         <img src={child} alt="369 ss" />
         </div>
       <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
-          369
+          A game from my childhood that I coded to play with my family to eliminate the hassle
+          of drawing out the board on a piece of paper each game. The game is tic-tac-toe-esque,
+          where players get points for each line of 3, 6, and 9 that they make.  
+          This was made using only Java and Java GUI, using algorithms to check for points and 
+          check for required lines when the option is selected. Learn more&nbsp;
+          <a href = "https://github.com/chengJazhua/369-game">
+        here.
+        
+        </a>
         </div>
-        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: '35vh'}}>
           
-          Java
+          Java&emsp; •&emsp; Java GUI
         </div>
       </TabPanel>
       <TabPanel value={value} index={4}>
+      <div>
+      <img src={web} alt="website" />
+        </div>
       <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
-          Website
+          You're on it now! This whole website was a personal project coded using react, javascript,
+          and CSS, while using Docker and Git for the application development. I used this as a means to learn 
+          and then apply my new knowledge of javascript and CSS. Feel free to look around the website some more
+          or check out the code&nbsp;
+          <a href = "https://github.com/chengJazhua/chengJazhua.github.io">
+        here!
+        
+        </a>
         </div> 
-        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: '39.02vh'}}>
           
-          Javascript&emsp; •&emsp; HTML&emsp; •&emsp; CSS &emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; React
+          Javascript&emsp; •&emsp; CSS &emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; React
         </div>
       </TabPanel>
       <TabPanel value={value} index={5}>
       <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
           In Progress!
         </div>
-        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic'}}>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: '55.1vh'}}>
           
           Javascript&emsp; •&emsp; Python&emsp; •&emsp; CSS &emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; React
         </div>

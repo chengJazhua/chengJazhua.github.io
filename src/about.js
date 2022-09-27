@@ -1,3 +1,4 @@
+import { light } from "@material-ui/core/styles/createPalette";
 import React from "react";
 import styled from "styled-components";
 import pic from "./pic.jpg"
@@ -12,13 +13,13 @@ const About = () => {
           </a>
       </div>
     <div style = {{
-        width: "60vw"
+        width: "75vw"
       }}>
-      <div className = "text" style = {{fontSize: 20}}>
+      <div className = "text2" style = {{fontSize: 20}}>
         Welcome to my website! My name is Ja-Zhua Cheng, a freshman currently studying Computer Science at University of Virginia. 
         I am an aspiring software engineer, but am very open to exploring other related fields. I not only love to code, but also enjoy 
         playing the piano and weightlifting. I have CS experience from an internship at Leidos, personal projects, and many classes.
-        In addition, I am a member in the Solar Car Team, Computer and Network Security Club, and Student Game Devlopers Club, while working
+        In addition, I am a member in the Solar Car Team, Computer and Network Security Club, and Student Game Developers Club, while working
         as an academic tutor for UVA's School of Engineering.
         I am currently looking for internships for 2023 summer, so feel free to reach out to me at chengjazhua@gmail.com or my socials at the bottom of the page!
         
