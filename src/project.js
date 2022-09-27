@@ -151,7 +151,7 @@ export default function TabPan() {
         </a>
           
         </div>
-        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: "35vh"}}>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: "30.95vh"}}>
           
           Java&emsp; •&emsp; LibGDX&emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; OOP
         </div>
