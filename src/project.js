@@ -201,8 +201,11 @@ export default function TabPan() {
           includes a page with all of your bank account information, in addition with certain stats and 
           suggestions to improve your spending habits. There is also a separate page that allows to user to 
           type and chat with an AI about their specific spending, allowing them to ask financial questions
-          and recieved personalized answers quickly. Check it out here: &nbsp;
-          <a href = "https://github.com/tot/hoohacks-2023"> </a>
+          and recieved personalized answers quickly. Check it out&nbsp;
+          <a href = "https://github.com/tot/hoohacks-2023"> 
+          here!
+          
+          </a>
         </div>
         <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: '55.1vh'}}>
           
