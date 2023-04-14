@@ -81,7 +81,7 @@ export default function TabPan() {
           <Tab label="Pastimer" {...a11yProps(2)} style = {{color: "#222231"}}/>
           <Tab label="369 Game" {...a11yProps(3)} style = {{color: "#222231"}}/>
           <Tab label="Personal Site" {...a11yProps(4)} style = {{color: "#222231"}}/>
-          <Tab label="Server and Frontend" {...a11yProps(5)} style = {{color: "#222231"}}/>
+          <Tab label="Personal AI Financial Chatbot" {...a11yProps(5)} style = {{color: "#222231"}}/>
           <Tab label="More to come..." {...a11yProps(6)} style = {{color: "#222231"}}/>
         </Tabs>
       </AppBar>
@@ -197,11 +197,16 @@ export default function TabPan() {
       </TabPanel>
       <TabPanel value={value} index={5}>
       <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
-          In Progress!
+          Created with 3 friends for HooHacks 2023, this was a fullstack project finished in under 24 hours. It 
+          includes a page with all of your bank account information, in addition with certain stats and 
+          suggestions to improve your spending habits. There is also a separate page that allows to user to 
+          type and chat with an AI about their specific spending, allowing them to ask financial questions
+          and recieved personalized answers quickly. Check it out here: &nbsp;
+          <a href = "https://github.com/tot/hoohacks-2023"> </a>
         </div>
         <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: '55.1vh'}}>
           
-          Javascript&emsp; •&emsp; Python&emsp; •&emsp; CSS &emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; React
+          Javascript&emsp; •&emsp; MongoDB&emsp; •&emsp; CSS &emsp; •&emsp; Git&emsp; •&emsp; Python&emsp; •&emsp; React
         </div>
       </TabPanel>
       <TabPanel value={value} index={6}>
