@@ -37,6 +37,7 @@ body {
 
 .skills{
   margin-left: 70px;
+  margin-bottom: 100px;
   display: flex;
   align-items: flex-end;
  
@@ -97,7 +98,7 @@ video{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  
   background-color: burlywood;
 }
 .section2{
@@ -112,6 +113,7 @@ video{
 .section4{
   
   background-color: #E9DFDA;
+  
   
 }
 .section5{

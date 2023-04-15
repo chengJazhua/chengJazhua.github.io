@@ -19,9 +19,8 @@ const About = () => {
         Welcome to my website! My name is Ja-Zhua Cheng, a freshman currently studying Computer Science at University of Virginia. 
         I am an aspiring software engineer, but am very open to exploring other related fields. I not only love to code, but also enjoy 
         playing the piano and weightlifting. I have CS experience from an internship at Leidos, personal projects, and many classes.
-        In addition, I am a member in the Solar Car Team, Computer and Network Security Club, and Student Game Developers Club, while working
-        as an academic tutor for UVA's School of Engineering.
-        I am currently looking for internships for 2023 summer, so feel free to reach out to me at chengjazhua@gmail.com or my socials at the bottom of the page!
+        In addition, I am a member in the Solar Car Team, Computer and Network Security Club, Wushu Club, and Student Game Developers Club.
+        Feel free to reach out to me at chengjazhua@gmail.com or my socials at the bottom of the page!
         
       </div>
       
@@ -30,7 +29,10 @@ const About = () => {
       <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: "30vh"}}>
           
           Experience in:&emsp; Java&emsp; •&emsp; C++&emsp; •&emsp; Python&emsp; •&emsp; Javascript&emsp; •&emsp; HTML &emsp; •&emsp; 
-          CSS&emsp; •&emsp; React&emsp; •&emsp; Docker&emsp; •&emsp; CAD&emsp; •&emsp; Unity&emsp; •&emsp; Git&emsp; •&emsp; MatLab
+          CSS&emsp; •&emsp; React&emsp; •&emsp; Docker&emsp; •&emsp; CAD&emsp; •&emsp; Unity&emsp; •&emsp; Git&emsp; •&emsp; MatLab &emsp; •&emsp; 
+          Powershell &emsp; •&emsp; Batch &emsp; •&emsp; Node.js &emsp; •&emsp; C &emsp; •&emsp; C# &emsp; •&emsp; Assembly x86-64 &emsp; •&emsp; LaTeX 
+          &emsp; •&emsp; Bash &emsp; •&emsp; Vim
+
         </div>
     </div>
     
