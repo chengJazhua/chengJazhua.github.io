@@ -223,7 +223,7 @@ export default function TabPan() {
       </TabPanel>
       <TabPanel value={value} index={6}>
       <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
-          Much more to come!
+          Much more to come soon!
         </div>
       </TabPanel>
     </div>
