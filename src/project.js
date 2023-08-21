@@ -13,6 +13,7 @@ import csv from "./CSV.mov";
 import pas from "./pastimer.PNG";
 import web from "./unknown.png";
 import ai from "./original.png";
+import cat from "./cat1.png"
   /*
 const Project = () => {
   return (
@@ -78,12 +79,13 @@ export default function TabPan() {
         <Tabs value={value} onChange={handleChange} aria-label="tabs" style = {{backgroundColor: "#EFF0F1"}}>
           
         <Tab label="CSV Converter" {...a11yProps(0)} style = {{color: "#222231"}}/>
-          <Tab label="Bing Bong" {...a11yProps(1)} style = {{color: "#222231"}}/>
-          <Tab label="Pastimer" {...a11yProps(2)} style = {{color: "#222231"}}/>
-          <Tab label="369 Game" {...a11yProps(3)} style = {{color: "#222231"}}/>
+          <Tab label="Personal AI Financial Chatbot" {...a11yProps(1)} style = {{color: "#222231"}}/>
+          <Tab label="Cat Collector Game" {...a11yProps(2)} style = {{color: "#222231"}}/>
+          <Tab label="Pastimer" {...a11yProps(3)} style = {{color: "#222231"}}/>
           <Tab label="Personal Site" {...a11yProps(4)} style = {{color: "#222231"}}/>
-          <Tab label="Personal AI Financial Chatbot" {...a11yProps(5)} style = {{color: "#222231"}}/>
-          <Tab label="More to come..." {...a11yProps(6)} style = {{color: "#222231"}}/>
+          <Tab label="Bing Bong" {...a11yProps(5)} style = {{color: "#222231"}}/>
+          <Tab label="369 Game" {...a11yProps(6)} style = {{color: "#222231"}}/>
+          <Tab label="More to come..." {...a11yProps(7)} style = {{color: "#222231"}}/>
         </Tabs>
       </AppBar>
       <div style={{
@@ -93,7 +95,7 @@ export default function TabPan() {
       <div>
         <video src={csv} width="300" height="500" controls="controls" autoplay="true" muted = "true"/>
         </div>
-        <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
+        <div className = "text" >
           A CSV to KML converter created during my internship at Leidos specifically for their uses
           before adapting it for more general use. It contains convex-hull algorithms to correctly
           display coordinates in a nice polygon shape. When given any CSV file or a folder of CSV files, 
@@ -114,93 +116,9 @@ export default function TabPan() {
       </TabPanel>
       <TabPanel value={value} index={1}>
       <div>
-        <img src={ball} alt="ball ss" />
-        </div>
-        
-      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
-          This is a little game ball game I created that was named Bing Bong. It was made using 
-          Java and Java GUI, and the core of the game is to just destroy all the blocks in the level
-          by hitting them with the ball. Although fairly simple gameplay wise, the program contains a collision 
-          detector, real world physics, a local leaderboard, scaling randomized levels, power-ups and debuffs.
-          It also utilizes Java as an object oriented language. Learn more&nbsp;
-          <a href = "https://github.com/chengJazhua/ballGame">
-        here.
-          
-        </a>
-          
-        </div>
-        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height:'35vh'}}>
-          
-          Java&emsp; •&emsp; Java GUI&emsp; •&emsp; Git&emsp; •&emsp; Physics&emsp; •&emsp; OOP
-        </div>
-        
-        
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-      <div>
-        <img src={pas} alt="pastimer" />
-        </div>
-      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
-          This is a desktop application called Pastimer. This was created based off the pomodoro studying technique,
-          where one studies then takes a break in semi-short time spans. Pastimer is a timer where it allows users
-          to select how long they want to study and take a break for, then continously repeats those
-          timers. Not only that, but the program contains self-coded mini-games for users during the break as well,
-          including minesweeper, frogger, and more. Learn more&nbsp;
-          <a href = "https://github.com/thomasltran/pastimer">
-        here.
-        
-        </a>
-          
-        </div>
-        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: "30.95vh"}}>
-          
-          Java&emsp; •&emsp; LibGDX&emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; OOP
-        </div>
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-      <div>
-        <img src={child} alt="369 ss" />
-        </div>
-      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
-          A game from my childhood that I coded to play with my family to eliminate the hassle
-          of drawing out the board on a piece of paper each game. The game is tic-tac-toe-esque,
-          where players get points for each line of 3, 6, and 9 that they make.  
-          This was made using only Java and Java GUI, using algorithms to check for points and 
-          check for required lines when the option is selected. Learn more&nbsp;
-          <a href = "https://github.com/chengJazhua/369-game">
-        here.
-        
-        </a>
-        </div>
-        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: '35vh'}}>
-          
-          Java&emsp; •&emsp; Java GUI
-        </div>
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-      <div>
-      <img src={web} alt="website" />
-        </div>
-      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
-          You're on it now! This whole website was a personal project coded using react, javascript,
-          and CSS, while using Docker and Git for the application development. I used this as a means to learn 
-          and then apply my new knowledge of javascript and CSS. Feel free to look around the website some more
-          or check out the code&nbsp;
-          <a href = "https://github.com/chengJazhua/chengJazhua.github.io">
-        here!
-        
-        </a>
-        </div> 
-        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: '39.02vh'}}>
-          
-          Javascript&emsp; •&emsp; CSS &emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; React
-        </div>
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-      <div>
         <img src={ai} alt="ai" />
         </div>
-      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
+      <div className = "text" >
           Created with 3 friends for HooHacks 2023, this was a fullstack project finished in under 24 hours. It 
           includes a page with all of your bank account information, in addition with certain stats and 
           suggestions to improve your spending habits. There is also a separate page that allows to user to 
@@ -221,8 +139,112 @@ export default function TabPan() {
           Javascript&emsp; •&emsp; MongoDB&emsp; •&emsp; CSS &emsp; •&emsp; Git&emsp; •&emsp; Python&emsp; •&emsp; React &emsp; •&emsp; Flask
         </div>
       </TabPanel>
+      <TabPanel value={value} index={2}>
+      <div>
+        <img src={ai} alt="cat" />
+        </div>
+      <div className = "text" >
+          A fully fledged game created in scratch with one other person, completely coded using pygame rather than a real game engine. 
+          As the lead developer, I wrote over 5000 lines and implemented most of the components and features of the game, including:
+          the ability to resize using pivot points like in game engines, saving and loading game state capabilities, image layering, and the cat collection.
+          Developed a proprietary genetics breeding algorithm to generate unique and realistic kittens based on their parents. I also designed
+          the complete user interface to ensure a fluid user experience and utilized UX principles for an intuitive interface. Object-oriented
+          principles were utilized to establish a hierarchy of cats and all of their subtypes. Looking to release on steam soon! Learn more soon!
+          
+        </div>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: '26.1vh'}}>
+          
+          Python&emsp; •&emsp; OOP&emsp; •&emsp; Git &emsp; •&emsp; UI/UX&emsp; •&emsp; Pygame
+        </div>
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+      <div>
+        <img src={pas} alt="pastimer" />
+        </div>
+      <div className = "text">
+          This is a desktop application called Pastimer. This was created based off the pomodoro studying technique,
+          where one studies then takes a break in semi-short time spans. Pastimer is a timer where it allows users
+          to select how long they want to study and take a break for, then continously repeats those
+          timers. Not only that, but the program contains self-coded mini-games for users during the break as well,
+          including minesweeper, frogger, and more. Learn more&nbsp;
+          <a href = "https://github.com/thomasltran/pastimer">
+        here.
+        
+        </a>
+          
+        </div>
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: "30.95vh"}}>
+          
+          Java&emsp; •&emsp; LibGDX&emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; OOP
+        </div>
+      </TabPanel>
+     
+      <TabPanel value={value} index={4}>
+      <div>
+      <img src={web} alt="website" />
+        </div>
+      <div className = "text" >
+          You're on it now! This whole website was a personal project coded using React, JavaScript,
+          and CSS, while using Docker and Git for the application development. I used this as a means to learn 
+          and then apply my new knowledge of javascript and CSS. The website was enhanced with dependencies like material-ui and hosted with
+          Github-Pages. Feel free to look around the website some more or check out the code&nbsp;
+          <a href = "https://github.com/chengJazhua/chengJazhua.github.io">
+        here!
+        
+        </a>
+        </div> 
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: '39.02vh'}}>
+          
+          Javascript&emsp; •&emsp; CSS &emsp; •&emsp; Git&emsp; •&emsp; Docker&emsp; •&emsp; React
+        </div>
+      </TabPanel>
+      
+      <TabPanel value={value} index={5}>
+      <div>
+        <img src={ball} alt="ball ss" />
+        </div>
+        
+      <div className = "text" >
+          This is a little game ball game I created that was named Bing Bong. It was made using 
+          Java and Java GUI, and the core of the game is to just destroy all the blocks in the level
+          by hitting them with the ball. Although fairly simple gameplay wise, the program contains a collision 
+          detector, real world physics, a local leaderboard, scaling randomized levels, power-ups and debuffs.
+          It also utilizes Java as an object oriented language. Learn more&nbsp;
+          <a href = "https://github.com/chengJazhua/ballGame">
+        here.
+          
+        </a>
+          
+        </div>
+        <div className = "skills" style = {{fontSize: '15', fontStyle: 'italic', height:'35vh'}}>
+          
+          Java&emsp; •&emsp; Java GUI&emsp; •&emsp; Git&emsp; •&emsp; Physics&emsp; •&emsp; OOP
+        </div>
+        
+        
+      </TabPanel>
       <TabPanel value={value} index={6}>
-      <div className = "text" style = {{color: "#222231", width: "60vw", fontSize: 20}}>
+      <div>
+        <img src={child} alt="369 ss" />
+        </div>
+      <div className = "text" >
+          A game from my childhood that I coded to play with my family to eliminate the hassle
+          of drawing out the board on a piece of paper each game. The game is tic-tac-toe-esque,
+          where players get points for each line of 3, 6, and 9 that they make.  
+          This was made using only Java and Java GUI, using algorithms to check for points and 
+          check for required lines when the option is selected. Learn more&nbsp;
+          <a href = "https://github.com/chengJazhua/369-game">
+        here.
+        
+        </a>
+        </div>
+        <div className = "skills" style = {{fontSize: '15', fontStyle: 'italic', height: '35vh'}}>
+          
+          Java&emsp; •&emsp; Java GUI
+        </div>
+      </TabPanel>
+      <TabPanel value={value} index={7}>
+      <div className = "text" >
           Much more to come soon!
         </div>
       </TabPanel>
