@@ -141,7 +141,7 @@ export default function TabPan() {
       </TabPanel>
       <TabPanel value={value} index={2}>
       <div>
-        <img src={ai} alt="cat" />
+        <img src={cat} alt="cat" />
         </div>
       <div className = "text" >
           A fully fledged game created in scratch with one other person, completely coded using pygame rather than a real game engine. 
