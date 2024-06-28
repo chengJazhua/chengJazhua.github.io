@@ -2,10 +2,13 @@ import { light } from "@material-ui/core/styles/createPalette";
 import React from "react";
 import styled from "styled-components";
 import pic from "./pic.jpg"
+import ScrollTop from './ScrollTop';
+
   
 const About = () => {
   return (
     <div>
+      <ScrollTop/>
       <div className = "buttonSpace">
       <img src={pic} className="selfie" />
       <a href="https://docs.google.com/document/d/1rHz_7m1T2YJT8qIr2reuPgV3pUOo2I8dNI6pBRvy3sc/edit?usp=sharing" target="_blank">
