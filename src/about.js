@@ -16,10 +16,11 @@ const About = () => {
         width: "75vw"
       }}>
       <div className = "text2" style = {{fontSize: '1.68vw'}}>
-        Welcome to my website! My name is Ja-Zhua Cheng, a sophomore currently studying Computer Science at University of Virginia. 
-        I am an aspiring software engineer, but am very open to exploring other related fields. I not only love to code, but also enjoy 
-        playing the piano and weightlifting. I have CS experience from an internship at Johns Hopkins Applied Physics Laboratory and Leidos, personal projects, and many classes.
-        In addition, I am a member in the Solar Car Team, Computer and Network Security Club, Wushu Club, and Student Game Developers Club.
+        Welcome to my website! My name is Ja-Zhua Cheng, a rising senior currently studying Computer Science at University of Virginia graduating May 2025. 
+        I am an aspiring software engineer, with a particular interest in AI and ML. I not only love to code, but also enjoy 
+        playing the piano, weightlifting, golf, and other sports. I have CS experience from internships at Capital One, Johns Hopkins Applied Physics Laboratory, and Leidos in addition to my own 
+        personal projects.
+        In addition, I am a member in the theCourseForum, Business and AI Club, and Wushu Club. I am currently looking for full time roles after graduation!
         Feel free to reach out to me at chengjazhua@gmail.com or my socials at the bottom of the page!
         
       </div>
@@ -29,7 +30,7 @@ const About = () => {
       <div className = "skills" style = {{fontSize: '1.27vw', fontStyle: 'italic', height: "30vh"}}>
           
           Experience in:&emsp; Java&emsp; •&emsp; C++&emsp; •&emsp; Python&emsp; •&emsp; Javascript&emsp; •&emsp; HTML &emsp; •&emsp; 
-          CSS&emsp; •&emsp; React&emsp; •&emsp; Docker&emsp; •&emsp; CAD&emsp; •&emsp; Unity&emsp; •&emsp; Git&emsp; •&emsp; MatLab &emsp; •&emsp; 
+          CSS&emsp; •&emsp; React&emsp; •&emsp; Go&emsp; •&emsp; AWS&emsp; •&emsp; Docker&emsp; •&emsp; Git&emsp; •&emsp; MatLab &emsp; •&emsp; 
           Powershell &emsp; •&emsp; Batch &emsp; •&emsp; Node.js &emsp; •&emsp; C &emsp; •&emsp; C# &emsp; •&emsp; Assembly x86-64 &emsp; •&emsp; LaTeX 
           &emsp; •&emsp; Bash &emsp; •&emsp; Vim &emsp; •&emsp; Agile &emsp; •&emsp; Linux
 

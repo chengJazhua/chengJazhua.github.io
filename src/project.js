@@ -77,21 +77,41 @@ export default function TabPan() {
      
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange} aria-label="tabs" style = {{backgroundColor: "#EFF0F1"}}>
-          
-        <Tab label="CSV Converter" {...a11yProps(0)} style = {{color: "#222231"}}/>
-          <Tab label="Personal AI Financial Chatbot" {...a11yProps(1)} style = {{color: "#222231"}}/>
-          <Tab label="Cat Collector Game" {...a11yProps(2)} style = {{color: "#222231"}}/>
-          <Tab label="Pastimer" {...a11yProps(3)} style = {{color: "#222231"}}/>
-          <Tab label="Personal Site" {...a11yProps(4)} style = {{color: "#222231"}}/>
-          <Tab label="Bing Bong" {...a11yProps(5)} style = {{color: "#222231"}}/>
-          <Tab label="369 Game" {...a11yProps(6)} style = {{color: "#222231"}}/>
-          <Tab label="More to come..." {...a11yProps(7)} style = {{color: "#222231"}}/>
+        <Tab label="Collab Critique" {...a11yProps(0)} style = {{color: "#222231"}}/>
+        <Tab label="CSV Converter" {...a11yProps(1)} style = {{color: "#222231"}}/>
+          <Tab label="Personal AI Financial Chatbot" {...a11yProps(2)} style = {{color: "#222231"}}/>
+          <Tab label="Cat Collector Game" {...a11yProps(3)} style = {{color: "#222231"}}/>
+          <Tab label="Pastimer" {...a11yProps(4)} style = {{color: "#222231"}}/>
+          <Tab label="Personal Site" {...a11yProps(5)} style = {{color: "#222231"}}/>
+          <Tab label="Bing Bong" {...a11yProps(6)} style = {{color: "#222231"}}/>
+          <Tab label="369 Game" {...a11yProps(7)} style = {{color: "#222231"}}/>
+          <Tab label="More to come..." {...a11yProps(8)} style = {{color: "#222231"}}/>
         </Tabs>
       </AppBar>
       <div style={{
         backgroundColor: "#E9DFDA"
       }}>
-      <TabPanel value={value} index={0} >
+        <TabPanel value={value} index={0} >
+      <div>
+        </div>
+        <div className = "text" >
+          A full-stack web application created for students to be able to write and review fellow classmates. Complete with features for 
+          automatic emailing to professors if approved by an admin, a public view of all reports, and the abiltiy to send anonymous reports
+          either to the public or be private. This was created using Django and integrated with google authentication to verify users, before
+          being deployed on Heroku, integrated with S3 for secure storage, and PostgreSQL for data storage. Learn more&nbsp;
+        <a href = "https://github.com/chengJazhua/critique">
+        here!
+          
+        </a>
+        </div>
+        
+        <div className = "skills" style = {{fontSize: 15, fontStyle: 'italic', height: "26.95vh"}}>
+          
+          Python&emsp; •&emsp; Amazon S3&emsp; •&emsp; SQL&emsp; •&emsp; Django&emsp; •&emsp; Heroku
+        </div>
+        
+      </TabPanel>
+      <TabPanel value={value} index={1} >
       <div>
         <video src={csv} width="300" height="500" controls="controls" autoplay="true" muted = "true"/>
         </div>
@@ -114,7 +134,7 @@ export default function TabPan() {
         </div>
         
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={2}>
       <div>
         <img src={ai} alt="ai" />
         </div>
@@ -139,7 +159,7 @@ export default function TabPan() {
           Javascript&emsp; •&emsp; MongoDB&emsp; •&emsp; CSS &emsp; •&emsp; Git&emsp; •&emsp; Python&emsp; •&emsp; React &emsp; •&emsp; Flask
         </div>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={3}>
       <div>
         <img src={cat} alt="cat" />
         </div>
@@ -157,7 +177,7 @@ export default function TabPan() {
           Python&emsp; •&emsp; OOP&emsp; •&emsp; Git &emsp; •&emsp; UI/UX&emsp; •&emsp; Pygame
         </div>
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={4}>
       <div>
         <img src={pas} alt="pastimer" />
         </div>
@@ -179,7 +199,7 @@ export default function TabPan() {
         </div>
       </TabPanel>
      
-      <TabPanel value={value} index={4}>
+      <TabPanel value={value} index={5}>
       <div>
       <img src={web} alt="website" />
         </div>
@@ -199,7 +219,7 @@ export default function TabPan() {
         </div>
       </TabPanel>
       
-      <TabPanel value={value} index={5}>
+      <TabPanel value={value} index={6}>
       <div>
         <img src={ball} alt="ball ss" />
         </div>
@@ -223,7 +243,7 @@ export default function TabPan() {
         
         
       </TabPanel>
-      <TabPanel value={value} index={6}>
+      <TabPanel value={value} index={7}>
       <div>
         <img src={child} alt="369 ss" />
         </div>
@@ -243,7 +263,7 @@ export default function TabPan() {
           Java&emsp; •&emsp; Java GUI
         </div>
       </TabPanel>
-      <TabPanel value={value} index={7}>
+      <TabPanel value={value} index={8}>
       <div className = "text" >
           Much more to come soon!
         </div>
